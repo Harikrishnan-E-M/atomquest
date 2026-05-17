@@ -1,0 +1,19 @@
+{
+  "name": "atomquest",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "corepack pnpm -r --parallel dev",
+    "build": "corepack pnpm -r build",
+    "build:web": "corepack pnpm --filter @atomquest/web build",
+    "build:api": "corepack pnpm --filter @atomquest/api build",
+    "lint": "corepack pnpm -r lint",
+    "format": "corepack pnpm -r format",
+    "check": "corepack pnpm -r check",
+    "seed": "corepack pnpm --filter @atomquest/api seed"
+  }
+}

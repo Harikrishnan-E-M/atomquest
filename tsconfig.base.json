@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@atomquest/shared": ["packages/shared/src/index.ts"],
+      "@atomquest/shared/*": ["packages/shared/src/*"]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: atomquest-api
+    env: node
+    region: oregon
+    rootDir: apps/api
+    buildCommand: pnpm build
+    startCommand: pnpm start
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: CLIENT_URL
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 15m
