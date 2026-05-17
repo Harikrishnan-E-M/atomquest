@@ -9,7 +9,7 @@
   "scripts": {
     "prebuild": "corepack pnpm --filter @atomquest/shared build",
     "dev": "corepack pnpm -r --parallel dev",
-    "build": "corepack pnpm -r build",
+    "build": "corepack pnpm -r build && node scripts/copy-web-dist.mjs",
     "build:web": "corepack pnpm --filter @atomquest/web build",
     "build:api": "corepack pnpm --filter @atomquest/api build",
     "lint": "corepack pnpm -r lint",

@@ -1,6 +1,6 @@
 {
   "version": 2,
   "installCommand": "corepack pnpm install --frozen-lockfile",
-  "buildCommand": "corepack pnpm --filter @atomquest/shared build && corepack pnpm --filter @atomquest/web build",
-  "outputDirectory": "apps/web/dist"
+  "buildCommand": "corepack pnpm build",
+  "outputDirectory": "dist"
 }
