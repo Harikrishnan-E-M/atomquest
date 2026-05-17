@@ -1,1 +1,1 @@
-{"root":["./src/constants.ts","./src/index.ts","./src/types.ts","./src/schemas/goal.ts"],"version":"5.9.3"}
+{"root":["./src/constants.ts","./src/index.ts","./src/types.ts","./src/schemas/checkin.ts","./src/schemas/goal.ts","./src/schemas/sharedgoal.ts"],"version":"5.9.3"}
