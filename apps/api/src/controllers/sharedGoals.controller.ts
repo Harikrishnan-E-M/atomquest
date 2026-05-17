@@ -1,8 +1,8 @@
 import type { Request, Response } from 'express';
 import { sharedGoalSchema } from '@atomquest/shared/schemas/sharedGoal';
-import { GoalModel } from '../models/Goal.model';
-import { SharedGoalModel } from '../models/SharedGoal.model';
-import { logAuditAction } from '../services/audit.service';
+import { GoalModel } from '../models/Goal.model.js';
+import { SharedGoalModel } from '../models/SharedGoal.model.js';
+import { logAuditAction } from '../services/audit.service.js';
 
 export async function listSharedGoals(req: Request, res: Response) {
   const sharedGoals = await SharedGoalModel.find().sort({ createdAt: -1 }).lean();

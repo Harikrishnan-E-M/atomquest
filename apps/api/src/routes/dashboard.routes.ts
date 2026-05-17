@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { adminDashboard, employeeDashboard, managerDashboard } from '../controllers/dashboard.controller';
-import { requireAuth, requireRole } from '../middleware/auth';
+import { adminDashboard, employeeDashboard, managerDashboard } from '../controllers/dashboard.controller.js';
+import { requireAuth, requireRole } from '../middleware/auth.js';
 
 const router = Router();
 

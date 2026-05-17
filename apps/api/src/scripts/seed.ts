@@ -3,8 +3,8 @@ import { fileURLToPath } from 'node:url';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import bcrypt from 'bcryptjs';
-import { UserModel } from '../models/User.model';
-import { GoalModel } from '../models/Goal.model';
+import { UserModel } from '../models/User.model.js';
+import { GoalModel } from '../models/Goal.model.js';
 
 const envPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../../../.env');
 dotenv.config({ path: envPath });

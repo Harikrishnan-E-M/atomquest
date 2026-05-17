@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { exportCsvReport, exportExcelReport, plannedVsActualReport } from '../controllers/reports.controller';
-import { requireAuth } from '../middleware/auth';
+import { exportCsvReport, exportExcelReport, plannedVsActualReport } from '../controllers/reports.controller.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();
 

@@ -1,8 +1,8 @@
 import type { Request, Response } from 'express';
 import { checkinFormSchema } from '@atomquest/shared/schemas/checkin';
-import { GoalModel } from '../models/Goal.model';
-import { CheckInModel } from '../models/CheckIn.model';
-import { calculateProgress } from '../services/progress.service';
+import { GoalModel } from '../models/Goal.model.js';
+import { CheckInModel } from '../models/CheckIn.model.js';
+import { calculateProgress } from '../services/progress.service.js';
 
 const quarterWindowMonths: Record<string, number[]> = {
   'goal-setting': [4],

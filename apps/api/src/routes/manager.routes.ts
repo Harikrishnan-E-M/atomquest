@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { approveGoal, listReviewGoals, rejectGoal, updateReviewGoal } from '../controllers/manager.controller';
-import { requireAuth, requireRole } from '../middleware/auth';
+import { approveGoal, listReviewGoals, rejectGoal, updateReviewGoal } from '../controllers/manager.controller.js';
+import { requireAuth, requireRole } from '../middleware/auth.js';
 
 const router = Router();
 

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { createGoal, listGoals, submitGoal, updateGoal } from '../controllers/goals.controller';
-import { requireAuth } from '../middleware/auth';
+import { createGoal, listGoals, submitGoal, updateGoal } from '../controllers/goals.controller.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();
 

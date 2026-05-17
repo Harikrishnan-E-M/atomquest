@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { NotificationModel } from '../models/Notification.model';
+import { NotificationModel } from '../models/Notification.model.js';
 
 export async function listNotifications(req: Request, res: Response) {
   const userId = req.auth?.userId;

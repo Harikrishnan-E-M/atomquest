@@ -1,7 +1,7 @@
 import type { Request, Response } from 'express';
 import bcrypt from 'bcryptjs';
-import { UserModel } from '../models/User.model';
-import { signAccessToken } from '../utils/jwt';
+import { UserModel } from '../models/User.model.js';
+import { signAccessToken } from '../utils/jwt.js';
 
 function sanitizeUser(user: { _id: unknown; name: string; email: string; role: string; department?: string }) {
   return {

@@ -1,6 +1,6 @@
 import cron from 'node-cron';
-import { UserModel } from '../models/User.model';
-import { createNotification } from '../services/notification.service';
+import { UserModel } from '../models/User.model.js';
+import { createNotification } from '../services/notification.service.js';
 
 const reminderMonths = new Set([4, 6, 9, 0, 2, 3]);
 

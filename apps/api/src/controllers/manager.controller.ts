@@ -1,8 +1,8 @@
 import type { Request, Response } from 'express';
 import { Types } from 'mongoose';
-import { GoalModel } from '../models/Goal.model';
-import { logAuditAction } from '../services/audit.service';
-import { createNotification } from '../services/notification.service';
+import { GoalModel } from '../models/Goal.model.js';
+import { logAuditAction } from '../services/audit.service.js';
+import { createNotification } from '../services/notification.service.js';
 
 export async function listReviewGoals(req: Request, res: Response) {
   const status = typeof req.query.status === 'string' ? req.query.status : 'submitted';

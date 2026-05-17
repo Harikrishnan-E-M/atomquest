@@ -1,4 +1,4 @@
-import { AuditLogModel } from '../models/AuditLog.model';
+import { AuditLogModel } from '../models/AuditLog.model.js';
 
 export async function logAuditAction(input: {
   userId: string;

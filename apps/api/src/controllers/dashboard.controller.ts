@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
-import { GoalModel } from '../models/Goal.model';
-import { CheckInModel } from '../models/CheckIn.model';
+import { GoalModel } from '../models/Goal.model.js';
+import { CheckInModel } from '../models/CheckIn.model.js';
 
 async function buildEmployeeDashboard(userId: string) {
   const goals = await GoalModel.find({ employeeId: userId }).lean();

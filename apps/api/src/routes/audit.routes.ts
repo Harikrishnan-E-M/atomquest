@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { listAuditLogs } from '../controllers/audit.controller';
-import { requireAuth, requireRole } from '../middleware/auth';
+import { listAuditLogs } from '../controllers/audit.controller.js';
+import { requireAuth, requireRole } from '../middleware/auth.js';
 
 const router = Router();
 

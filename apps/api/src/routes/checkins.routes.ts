@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { createCheckIn, listCheckIns } from '../controllers/checkins.controller';
-import { requireAuth } from '../middleware/auth';
+import { createCheckIn, listCheckIns } from '../controllers/checkins.controller.js';
+import { requireAuth } from '../middleware/auth.js';
 
 const router = Router();
 

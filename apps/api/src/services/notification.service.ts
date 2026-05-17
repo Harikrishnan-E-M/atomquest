@@ -1,4 +1,4 @@
-import { NotificationModel } from '../models/Notification.model';
+import { NotificationModel } from '../models/Notification.model.js';
 
 export async function createNotification(input: {
   userId: string;

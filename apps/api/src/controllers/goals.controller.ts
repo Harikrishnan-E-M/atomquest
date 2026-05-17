@@ -1,8 +1,8 @@
 import type { Request, Response } from 'express';
 import { goalFormSchema } from '@atomquest/shared/schemas/goal';
-import { GoalModel } from '../models/Goal.model';
-import { logAuditAction } from '../services/audit.service';
-import { createNotification } from '../services/notification.service';
+import { GoalModel } from '../models/Goal.model.js';
+import { logAuditAction } from '../services/audit.service.js';
+import { createNotification } from '../services/notification.service.js';
 
 function getEmployeeId(req: Request) {
   return req.auth?.userId;

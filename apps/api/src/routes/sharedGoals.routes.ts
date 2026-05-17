@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { createSharedGoal, listSharedGoals, syncSharedGoal } from '../controllers/sharedGoals.controller';
-import { requireAuth, requireRole } from '../middleware/auth';
+import { createSharedGoal, listSharedGoals, syncSharedGoal } from '../controllers/sharedGoals.controller.js';
+import { requireAuth, requireRole } from '../middleware/auth.js';
 
 const router = Router();
 
